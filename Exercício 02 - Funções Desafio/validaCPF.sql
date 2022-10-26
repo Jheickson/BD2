@@ -77,6 +77,7 @@ BEGIN
 	END IF;
 
 	IF ((dig_1 || '' || dig_2) = substring(validarpar_cpf FROM len-1 FOR 2))
+	
 		THEN RETURN 'CPF Válido';
 
 	ELSE
