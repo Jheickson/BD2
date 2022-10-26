@@ -4,6 +4,7 @@ CREATE OR REPLACE FUNCTION validaCPF(cpf_par varchar(11))
 RETURNS varchar AS $$
 
 DECLARE
+
 	x real;
 	y real;
 	len integer; 
