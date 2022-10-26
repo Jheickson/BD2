@@ -1,3 +1,5 @@
+-- 1) Elaborar uma função que valide o digito verificador de um CPF
+
 CREATE OR REPLACE FUNCTION validaCPF(cpf_par varchar(11))
 RETURNS varchar AS $$
 
