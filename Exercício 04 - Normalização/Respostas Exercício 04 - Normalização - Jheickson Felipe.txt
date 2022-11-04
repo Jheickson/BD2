@@ -1,0 +1,29 @@
+Q1 - Certo
+Q2 - c) Terceira Forma Normal (3FN).
+Q3 - d) Os atributos NomeDisciplina, NomeAluno e DataNascAluno devem ser retirados da tabela para que a mesma fique em 1ª Forma Normal.
+Q4 - b) funcionario {codfunc, nome, end, email, codsetor, salario, codfuncao, cpf} / setor {codsetor, descsetor} / funcao {codfuncao, descfuncao, ch_funcao}
+Q5 - b) não está na primeira forma normal.
+
+Q6 - '* *' = Tabela | '_ _' = Chave
+
+	*Funcionario* {_Matricula_, _RG_, Nome, DataNascimento, Nacionalidade, Sexo, EstadoCivil, CIC, DataAdmissao}
+	
+	*FuncionarioEndereco* {_MatriculaFuncionario_, Rua, Bairro, Numero, CEP}
+	
+	*FuncionarioTelefone* {_MatriculaFuncionario_, Telefone}
+	
+	*FuncionarioCargos* {_MatriculaFuncionario_, Cargo, DataInicio, DataFim}
+	
+	*FuncionarioDependentes* {_MatriculaFuncionario_, Nome, DataNascimento}
+
+Q7 - '* *' = Tabela | '_ _' = Chave
+
+	*Paciente* {_NumeroPaciente_, _RG_, Nome, DataNascimento, Sexo, Convenio, EstadoCivil}
+	
+	*PacienteEndereco* {_NumeroPaciente_, Rua, Bairro, Numero, CEP}
+	
+	*PacienteTelefone* {_NumeroPaciente_, Telefone}
+	
+	*Consulta* {_NumeroConsulta_, NumeroPaciente, Data, Medico, Diagnostico}
+	
+	*Exame* {_NumeroConsulta_, Exame, Data}
